@@ -25,4 +25,9 @@ $.each(global_arr_keys_check, function(index, key_check){
     }
 });
 
-return typeof item!=="undefined"&&(arr_undefined.indexOf("undefined") == -1)&&item[key]||item                                
+return typeof item!=="undefined"&&(arr_undefined.indexOf("undefined") == -1)&&item[key]||item 
+
+to the line
+<input type="search" this.value = '';" name="serch_string" id="serch_string" ...>
+added a space check (required for me)
+<input type="search" oninput="if (this.value == ' ') this.value = '';" name="serch_string" id="serch_string" ...>
