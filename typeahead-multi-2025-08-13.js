@@ -240,7 +240,7 @@
            
             // check [&&item.name] given the entered substring [this.$element.val()] and the corresponding search field [key_check]
             let key;
-            let substr = this.$element.val();
+            let substr = this.$element.val().toLowerCase();
             $.each(global_arr__keys_check, function(index, key_check){
                 if (item[key_check] && item[key_check].toLowerCase().indexOf(substr) != -1) {
                     key = key_check;
